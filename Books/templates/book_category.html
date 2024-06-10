@@ -1,0 +1,6 @@
+{% extends 'template.html' %}
+{% block book %}
+        {% for category in book_category%}
+            <p> <a href="/book/{{category.id}}">{{category.title}}</a></p>
+        {% endfor %}
+{% endblock book %}

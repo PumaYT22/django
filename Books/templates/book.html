@@ -1,0 +1,13 @@
+{% extends 'template.html' %}
+{% block book %}
+{% if onebook %}
+    <h1>Tytuł: {{onebook.title}}</h1>
+    <h1>Autor: {{onebook.author}}</h1>
+    <p>Wydawnictwo: {{onebook.publishingHouse}}</p>
+    <p>Kategoria: {{onebook.category}}</p>
+    <p>Cena: {{onebook.price}} zł</p>
+    <p>Opis: {{onebook.description}}</p>
+{% else %}
+    <p>Nie ma takiej książki</p>
+{% endif %}
+{% endblock book %}
